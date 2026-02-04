@@ -1,0 +1,3 @@
+adb -s MFPZZL6XGEHQWCBY shell "ps|grep dev.sunray.mh6"
+adb -s MFPZZL6XGEHQWCBY shell getprop dalvik.vm.heapgrowthlimit
+adb -s MFPZZL6XGEHQWCBY shell cat /proc/【pid】/status

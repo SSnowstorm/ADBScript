@@ -1,0 +1,149 @@
+--------- beginning of system
+06-27 10:16:13.728  1297  1297 I InstallerConnection: connecting...
+06-27 10:16:14.900  1297  1297 I InstallerConnection: connecting...
+06-27 10:16:14.986  1297  1297 I ActivityManager: Memory class: 192
+06-27 10:16:15.832  1297  1297 I SystemServiceManager: Starting phase 100
+06-27 10:16:15.885  1297  1297 I SystemServer: StartPackageManagerService
+06-27 10:16:16.311  1297  1297 D SELinuxMMAC: Using policy file /system/etc/security/mac_permissions.xml
+06-27 10:16:17.049  1297  1297 W PackageParser: No actions in intent filter at /system/priv-app/Contacts/Contacts.apk Binary XML file line #409
+06-27 10:16:17.848  1297  1297 W PackageParser: No actions in intent filter at /system/app/CMFileManager/CMFileManager.apk Binary XML file line #166
+06-27 10:16:19.060  1297  1297 V PackageManager: reconcileAppsData for null u0 0x3
+06-27 10:16:19.313  1297  1297 I SystemServer: StartOtaDexOptService
+06-27 10:16:19.314  1297  1297 I SystemServer: StartUserManagerService
+06-27 10:16:19.421  1297  1297 I SystemServer: StartTelephonyRegistry
+06-27 10:16:19.425  1297  1297 I SystemServer: StartEntropyMixer
+06-27 10:16:19.426  1297  1297 I EntropyMixer: Writing entropy...
+06-27 10:16:19.427  1297  1297 I SystemServer: Camera Service
+06-27 10:16:19.445  1297  1297 I SystemServer: StartAccountManagerService
+06-27 10:16:19.453  1297  1297 I SystemServer: StartContentService
+06-27 10:16:19.532  1297  1297 I SystemServer: StartVibratorService
+06-27 10:16:19.533  1297  1297 I SystemServer: StartConsumerIrService
+06-27 10:16:19.534  1297  1297 I SystemServer: StartAlarmManagerService
+06-27 10:16:19.536  1297  1297 I SystemServer: StartInputManagerService
+06-27 10:16:19.657  1297  1297 I SystemServer: StartVrManagerService
+06-27 10:16:19.664  1297  1297 I InputManager: Starting input manager
+06-27 10:16:19.686  1297  1297 I SystemServer: Tab Manager
+06-27 10:16:19.749  1297  1297 I SystemServer: ConnectivityMetricsLoggerService
+06-27 10:16:19.758  1297  1297 I SystemServer: IpConnectivityMetrics
+06-27 10:16:19.759  1297  1297 I SystemServer: PinnerService
+06-27 10:16:19.773  1297  1297 I SystemServer: StartAccessibilityManagerService
+06-27 10:16:19.842  1297  1297 I SystemServer: StartLockSettingsService
+06-27 10:16:19.898  1297  1297 I SystemServer: StartStatusBarManagerService
+06-27 10:16:19.906  1297  1297 I SystemServer: StartNetworkManagementService
+06-27 10:16:19.910  1297  1297 I SystemServer: StartNetworkScoreService
+06-27 10:16:19.925  1297  1297 I SystemServer: StartNetworkStatsService
+06-27 10:16:19.930  1297  1297 I SystemServer: StartNetworkPolicyManagerService
+06-27 10:16:19.933  1297  1297 I SystemServer: No Wi-Fi NAN Service (NAN support Not Present)
+06-27 10:16:20.091  1297  1297 I SystemServer: StartConnectivityService
+06-27 10:16:20.093  1297  1297 D ConnectivityService: ConnectivityService starting up
+06-27 10:16:20.094  1297  1297 D ConnectivityService: wifiOnly=false
+06-27 10:16:20.154  1297  1297 I SystemServer: StartLocationManagerService
+06-27 10:16:20.156  1297  1297 I SystemServer: StartCountryDetectorService
+06-27 10:16:20.157  1297  1297 I SystemServer: StartSearchManagerService
+06-27 10:16:20.159  1297  1297 I SystemServer: StartWallpaperManagerService
+06-27 10:16:20.272  1297  1297 I SystemServer: StartSerialService
+06-27 10:16:20.303  1297  1297 I SystemServer: Gesture Launcher Service
+06-27 10:16:20.303  1297  1297 I SystemServer: StartDiskStatsService
+06-27 10:16:20.304  1297  1297 I SystemServer: StartSamplingProfilerService
+06-27 10:16:20.306  1297  1297 I SystemServer: StartCommonTimeManagementService
+06-27 10:16:20.306  1297  1297 I SystemServer: CertBlacklister
+06-27 10:16:20.307  1297  1297 I SystemServer: StartAssetAtlasService
+06-27 10:16:20.316  1297  1297 W FingerprintService: fingerprint service not available
+06-27 10:16:20.396  1297  1297 I SystemServiceManager: Starting phase 480
+06-27 10:16:20.419  1297  1297 I SystemServiceManager: Starting phase 500
+06-27 10:16:20.426  1297  1356 D ConnectivityService: Got NetworkFactory Messenger for Ethernet
+06-27 10:16:20.429  1297  1297 D NetworkManagement: setInterfaceUp: eth0
+06-27 10:16:20.429  1297  1297 D NetworkManagement: getInterfaceConfig: eth0
+06-27 10:16:20.431  1297  1297 D NetworkManagement: getInterfaceConfig: eth0
+06-27 10:16:20.432  1297  1297 D NetworkManagement: getInterfaceConfig: eth0
+06-27 10:16:20.530  1297  1297 I SystemServiceManager: Starting phase 550
+06-27 10:16:20.576  1297  1356 D ConnectivityService: NetworkAgentInfo [Ethernet () - 100] EVENT_NETWORK_INFO_CHANGED, going from null to CONNECTED
+06-27 10:16:20.602  1297  1356 D ConnectivityService: Setting DNS servers for network 100 to [/192.168.1.77, /119.29.29.29, /114.114.114.114]
+06-27 10:16:20.607  1297  1297 I SystemServer: WebViewFactory preparation
+06-27 10:16:20.613  1297  1316 V MountService:     state=UNMOUNTED 
+06-27 10:16:20.613  1297  1316 V MountService:     path=null internalPath=null 
+06-27 10:16:20.930  1297  1352 D NetworkManagement: setInterfaceDown: wlan0
+06-27 10:16:20.930  1297  1352 D NetworkManagement: getInterfaceConfig: wlan0
+06-27 10:16:20.998  1297  1297 I SystemServiceManager: Starting phase 600
+06-27 10:16:21.306  1297  1349 D NetworkManagement: setInterfaceUp: p2p0
+06-27 10:16:21.306  1297  1349 D NetworkManagement: getInterfaceConfig: p2p0
+06-27 10:16:22.030  1297  1608 I Telecom : Telecom: Non-call EVENT: AUDIO_ROUTE, Entering state QuiescentEarpieceRoute
+06-27 10:16:22.163  1297  1297 I Telecom : Class: TelecomSystem.INSTANCE being set
+06-27 10:16:22.239  1297  1310 I SyncManager: Got SyncJobService instance.
+06-27 10:16:22.634  1297  1356 D ConnectivityService: Got NetworkFactory Messenger for PhoneSwitcherNetworkRequstListener
+06-27 10:16:22.638  1297  1356 D ConnectivityService: Got NetworkFactory Messenger for TelephonyNetworkFactory[0]
+06-27 10:16:23.312  1397  1397 W StatusBar: java.lang.Throwable
+06-27 10:16:23.320  1397  1397 W StatusBar: java.lang.Throwable
+06-27 10:16:23.449  1397  1397 W StatusBar: java.lang.Throwable
+06-27 10:16:23.673  1297  1318 I SystemServiceManager: Starting phase 1000
+06-27 10:16:23.689  1297  1318 D ActivityManager: Finishing user boot 0
+06-27 10:16:23.696  1297  1318 V PackageManager: reconcileAppsData for null u0 0x2
+06-27 10:16:23.793  1297  1356 D ConnectivityService: Got NetworkFactory Messenger for WIFI
+06-27 10:16:23.793  1297  1356 D ConnectivityService: Got NetworkFactory Messenger for WIFI_UT
+06-27 10:16:23.793  1297  1311 D MountService: onUnlockUser 0
+06-27 10:16:23.926  1297  1317 D BluetoothManagerService: MESSAGE_USER_UNLOCKED
+06-27 10:16:24.503  1297  1351 D WifiService: New client listening to asynchronous messages
+06-27 10:16:24.755  1297  1356 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from null to CONNECTING
+06-27 10:16:24.755  1297  1352 D NetworkManagement: getInterfaceConfig: myInterface
+06-27 10:16:24.757  1297  1356 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from CONNECTING to CONNECTED
+06-27 10:16:24.890  1297  1356 D ConnectivityService: Setting DNS servers for network 101 to [/192.168.1.77, /119.29.29.29, /114.114.114.114]
+06-27 10:16:24.901  1297  1356 D ConnectivityService: Lingering NetworkAgentInfo [Ethernet () - 100] for 30000ms
+06-27 10:16:28.627  1297  1828 I BootReceiver: Checking for fsck errors
+06-27 10:16:56.014  1297  1356 D ConnectivityService: NetworkAgentInfo [Ethernet () - 100] got DISCONNECTED, was satisfying 3
+06-27 12:03:46.831  1297  1310 I UsageStatsService: User[0] Rolling over usage stats
+06-27 12:03:51.668  1297  2753 W ActivityManager: Slow operation: 122ms so far, now at startProcess: asking zygote to start proc
+06-27 13:16:20.572  1297  1297 I EntropyMixer: Writing entropy...
+06-27 14:18:33.529  1297  1297 W BackupManagerService: Backup pass but e=false p=true
+--------- beginning of main
+06-27 16:16:12.151  1297  1352 D WifiStateMachine: setScanResults mScanResults.size=1
+06-27 16:16:20.592  1297  1297 I EntropyMixer: Writing entropy...
+06-27 16:17:11.119  1297  2763 I         : fastpipe: Connect success
+--------- beginning of crash
+06-27 16:17:11.888  5447  5447 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+06-27 16:17:11.889  5447  5447 F DEBUG   : Revision: '0'
+06-27 16:17:11.889  5447  5447 F DEBUG   : ABI: 'x86'
+06-27 16:17:11.895  5447  5447 F DEBUG   : 
+06-27 16:17:11.895  5447  5447 F DEBUG   : backtrace:
+06-27 16:17:11.895  5447  5447 F DEBUG   :     #09 pc 00000007  <unknown>
+06-27 16:17:11.940  1297  2759 D GraphicsStats: Buffer count: 4
+06-27 16:17:13.511  1297  1318 I art     : Starting a blocking GC Explicit
+06-27 16:17:14.061  1530  1530 E PhoneInterfaceManager: [PhoneIntfMgr] getCarrierPackageNamesForIntent: No UICC
+06-27 16:17:14.237  1297  2756 E ActivityManager: java.lang.Throwable
+06-27 16:17:15.189  1297  1544 E ActivityManager: java.lang.Throwable
+06-27 16:17:46.877  1297  1318 I art     : Starting a blocking GC Explicit
+06-27 16:18:01.563  1116  5739 I GenericSource: start
+06-27 16:18:01.566  1116  5743 I OMXClient: MuxOMX ctor
+06-27 16:18:52.153  1297  1352 D WifiStateMachine: setScanResults mScanResults.size=1
+06-27 16:21:32.154  1297  1352 D WifiStateMachine: setScanResults mScanResults.size=1
+06-27 16:23:43.711  5471  5519 D Cocos   : 16:23:43 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:23:43.712  5471  5519 D Cocos   : 16:23:43 [DEBUG]: JS: WebSocket recv, MsgID: 1
+06-27 16:24:05.995  5471  5519 D Cocos   : 16:24:05 [DEBUG]: JS: 内存信息检查 Total Private Dirty Memory (KB): 306156
+06-27 16:24:05.995  5471  5519 D Cocos   : Total PSS Memory (KB): 386497
+06-27 16:24:05.995  5471  5519 D Cocos   : 总内存: 3,544MB
+06-27 16:24:05.995  5471  5519 D Cocos   : 可用内存: 2,953MB
+06-27 16:24:12.153  1297  1352 D WifiStateMachine: setScanResults mScanResults.size=1
+06-27 16:24:12.696  5471  5519 D Cocos   : 16:24:12 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:24:12.697  5471  5519 D Cocos   : 16:24:12 [DEBUG]: JS: WebSocket recv, MsgID: 1
+06-27 16:24:41.712  5471  5519 D Cocos   : 16:24:41 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:24:41.713  5471  5519 D Cocos   : 16:24:41 [DEBUG]: JS: WebSocket recv, MsgID: 1
+06-27 16:25:06.013  5471  5519 D Cocos   : 16:25:06 [DEBUG]: JS: 内存信息检查 Total Private Dirty Memory (KB): 303168
+06-27 16:25:06.013  5471  5519 D Cocos   : Total PSS Memory (KB): 383797
+06-27 16:25:06.013  5471  5519 D Cocos   : 总内存: 3,544MB
+06-27 16:25:06.013  5471  5519 D Cocos   : 可用内存: 2,956MB
+06-27 16:25:10.749  5471  5519 D Cocos   : 16:25:10 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:25:10.750  5471  5519 D Cocos   : 16:25:10 [DEBUG]: JS: WebSocket recv, MsgID: 1
+06-27 16:25:39.743  5471  5519 D Cocos   : 16:25:39 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:25:39.744  5471  5519 D Cocos   : 16:25:39 [DEBUG]: JS: WebSocket recv, MsgID: 1
+06-27 16:25:46.431  5471  5511 E TRuntime.CctTransportBa: 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:178)
+06-27 16:25:46.431  5471  5511 E TRuntime.CctTransportBa: 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:356)
+06-27 16:25:46.431  5471  5511 E TRuntime.CctTransportBa: 	at java.net.Socket.connect(Socket.java:605)
+06-27 16:25:46.431  5471  5511 E TRuntime.CctTransportBa: 		... 22 more
+06-27 16:25:46.645  5471  5511 I TRuntime.CctTransportBa: Making request to: https://firebaselogging.googleapis.com/v0cc/log/batch?format=json_proto3
+06-27 16:26:06.017  5471  5519 D Cocos   : 16:26:06 [DEBUG]: JS: 内存信息检查 Total Private Dirty Memory (KB): 306872
+06-27 16:26:06.017  5471  5519 D Cocos   : Total PSS Memory (KB): 387501
+06-27 16:26:06.017  5471  5519 D Cocos   : 总内存: 3,544MB
+06-27 16:26:06.017  5471  5519 D Cocos   : 可用内存: 2,952MB
+06-27 16:26:08.767  5471  5519 D Cocos   : 16:26:08 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:26:08.768  5471  5519 D Cocos   : 16:26:08 [DEBUG]: JS: WebSocket recv, MsgID: 1
+06-27 16:26:37.761  5471  5519 D Cocos   : 16:26:37 [DEBUG]: JS: WebSocket recv, type: object
+06-27 16:26:37.762  5471  5519 D Cocos   : 16:26:37 [DEBUG]: JS: WebSocket recv, MsgID: 1

@@ -1,0 +1,1 @@
+adb -s c527043 logcat > logcat.log

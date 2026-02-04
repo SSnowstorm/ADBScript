@@ -1,0 +1,50 @@
+{
+  "keyword": ["AllInfo", "BattleInfo", "InstallLatest","SaveLog"],
+
+  "filtered_words" : [
+    "glGetError exceeded."
+  ],
+
+  "project": {
+    "z2": {
+      "apk_type": "google",
+      "packagename": "dev.gjs.tjidle.doomsday",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_Z2"
+    },
+    "mh2":{
+      "apk_type": "google",
+      "packagename": "dev.tojoy.mh2",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_MH2"
+    },
+    "mh3":{
+      "apk_type": "google",
+      "packagename": "dev.tojoy.mh3",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_MH3"
+    },
+    "mh5":{
+      "apk_type": "debug",
+      "packagename": "dev.tojoy.mh4",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_MH5"
+    },
+    "xz_dev": {
+      "apk_type": "google-debug",
+      "packagename": "dev.sunray.xzkl",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_XZ_DEVELOP"
+    },
+    "xz_master": {
+      "apk_type": "debug",
+      "packagename": "dev.sunray.xzklmaster",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_XZ_MASTER"
+    },
+    "mh3mha": {
+      "apk_type": "debug",
+      "packagename": "com.tojoy.mh3mha3mha",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_MH3MHA"
+    },
+    "mh6_dev": {
+      "apk_type": "debug",
+      "packagename": "dev.sunray.mh6",
+      "pkg_folder": "\\\\192.168.1.94\\fangcheng0505\\APK_MH6_DEVELOP"
+    }
+  }
+}
