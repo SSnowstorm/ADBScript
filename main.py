@@ -98,13 +98,14 @@ def main():
 
 
 if __name__ == "__main__":
+    choice = None  # 确保无论是否被中断，finally 中都能访问到 choice
     try:
         choice = main()
         count_down(seconds=10)
     except KeyboardInterrupt as e:
         print(e)
     finally:
-        if choice in ('InstallLatest', 'SaveLog'):
+        if choice in ("InstallLatest", "SaveLog"):
             count_down(seconds=10)
         else:
             count_down(minutes=1)
