@@ -97,7 +97,7 @@ def main():
     return handle_user_choice(selection, config, package_type, package_path, adb_path)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     try:
         choice = main()
         count_down(seconds=10)
