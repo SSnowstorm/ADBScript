@@ -8,7 +8,7 @@ def install_latest_apk(adb_path, _apk_type, project_name, device, pkg_folder):
     _folder_path = pkg_folder[project_name]
 
     # 获取指定文件夹中所有的 APK 文件路径
-    for root, dirs, files in os.walk(_folder_path):
+    for root, files in os.walk(_folder_path):
         for file in files:
             if file.endswith(".apk") and _apk_type in file:
                 apk_files.append(os.path.join(root, file))
