@@ -1,13 +1,14 @@
 import datetime
 import os
+import re
 import sys
 
-from Scripts.timeOperate import count_down
 from Scripts.cmdFrame import create_frame
-from testModules.pyLogcat import printLog, saveLog
-from testModules.pyInstallAPK import install_latest_apk
-from testModules.pySaveLog import save_log
 from Scripts.loadJson import load_conf
+from Scripts.timeOperate import count_down
+from testModules.pyInstallAPK import install_latest_apk
+from testModules.pyLogcat import printLog
+from testModules.pySaveLog import save_log
 
 
 def get_adb_path():
@@ -61,14 +62,17 @@ def handle_user_choice(selection, config, package_type, package_path, adb_path):
     elif choice == "SaveLog":
         current_time = datetime.datetime.now().strftime("%m%d-%H%M")
         current_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
-        file_name = f"{selection['devices']}_{current_time}.log"
+
+        # Windows 文件名不允许包含 : 等特殊字符（例如 adb tcp 设备序列号会包含冒号）
+        safe_device = re.sub(r'[<>:"/\\|?*]', "_", selection["devices"])
+        file_name = f"{safe_device}_{current_time}.log"
         file_path = os.path.join(current_dir, file_name)
 
         save_log(
             adb_path=adb_path,
             device=selection["devices"],
             filtered_word=config["filtered_words"][0],
-            filename=file_name,
+            filename=file_path,
             timeout=10,
         )
         # saveLog(adb_path=adb_path, device=selection["devices"], filtered_word=config["filtered_words"][0],

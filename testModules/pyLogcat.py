@@ -3,7 +3,6 @@ import os.path
 import subprocess
 import sys
 
-
 # cmd = ["adb", "-s", "emulator-5554", "logcat"]
 
 

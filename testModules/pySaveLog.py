@@ -1,10 +1,6 @@
 import shlex
-import signal
 import subprocess
-import threading
 import time
-
-from Scripts.timeOperate import count_down
 
 
 def run_command(cmd, timeout):
@@ -48,27 +44,54 @@ def save_log(adb_path, device, filtered_word, filename, timeout):
     if timeout is None:
         timeout = 10
     print(f"filtered_word:{filtered_word}")
-    filtered_word = "'" + filtered_word + "'"
-    # print(f"filtered_word processed:{filtered_word}")
-    # command = f"adb_path adb -s {device} shell \"logcat | grep -v {filtered_word}\" > {filename}"
-    command = [
-        adb_path,
-        "-s",
-        device,
-        "shell",
-        f"logcat | grep -v {filtered_word}",
-        ">",
-        filename,
-    ]
-    # command = [adb_path, '-s', device, "logcat", ">", filename]
-    # print(shlex.join(command))
-    # [adb_path, '-s', device, "logcat", pkg_name]
+    # 逐行读取 adb logcat 并写入文件，支持超时或 Ctrl+C 退出。
+    start_ts = time.monotonic()
+    line_count = 0
+    process = None
+
     try:
-        while True:
-            run_command(command, timeout)
+        with open(filename, "w", encoding="utf-8") as out_f:
+            process = subprocess.Popen(
+                [adb_path, "-s", device, "logcat"],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                creationflags=subprocess.CREATE_NEW_PROCESS_GROUP,
+            )
+
+            while True:
+                if timeout is not None and (time.monotonic() - start_ts) >= timeout:
+                    break
+
+                line = process.stdout.readline() if process.stdout is not None else ""
+                if not line:
+                    break
+
+                if filtered_word and filtered_word in line:
+                    continue
+
+                out_f.write(line)
+                line_count += 1
+
+    except KeyboardInterrupt as e:
+        raise e
     except Exception as e:
         print(e)
         raise e
+    finally:
+        if process is not None:
+            try:
+                process.terminate()
+            except Exception:
+                pass
+            try:
+                process.wait(timeout=2)
+            except Exception:
+                pass
+
+            print(f"save_log done, wrote {line_count} lines to {filename}")
 
 
 if __name__ == "__main__":

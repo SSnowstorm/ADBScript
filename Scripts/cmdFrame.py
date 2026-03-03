@@ -1,9 +1,8 @@
 import os
 import sys
 
-import adbutils
-from adbutils import adb
 import inquirer
+from adbutils import adb
 
 
 def keyword_combination(args: dict, packagename: dict):
@@ -45,7 +44,7 @@ def keyword_combination(args: dict, packagename: dict):
         # 记录用户选择的项目名
         result["project"] = args["project"]
     except Exception as e:
-        print('Invalid Input:\n', e)
+        print("Invalid Input:\n", e)
 
     return result
 
